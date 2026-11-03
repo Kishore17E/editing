@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kishore Edits - Premium freelance video editor specializing in cinematic short-form content, YouTube videos, motion graphics, and sound design. Turn raw footage into viral content.">
+    <meta name="keywords" content="Video Editor, Short-form Editor, Cinematic Edits, Instagram Reels Editor, YouTube Editor, Kishore Edits, Portfolio">
+    <meta name="author" content="Kishore">
+    <meta property="og:title" content="KISHORE EDITS | Cinematic & Short-Form Video Editor Portfolio">
+    <meta property="og:description" content="I edit videos that make people stop scrolling. High-end video editing, motion graphics, sound design, and color grading.">
+    <meta property="og:type" content="website">
+    
+    <title>KISHORE EDITS | Cinematic & Short-Form Video Editor Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Subtle Cursor Glow Element (Desktop only) -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-container">
+            <a href="#" class="logo" aria-label="Kishore Edits Home">
+                <span class="logo-accent">K</span>ISHORE EDITS
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#work" class="nav-link">WORK</a></li>
+                    <li><a href="#services" class="nav-link">SERVICES</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-primary btn-sm btn-magnetic">HIRE ME</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="availability-badge reveal-fade-up">
+                    <span class="badge-dot"></span>
+                    AVAILABLE FOR SELECT PROJECTS
+                </div>
+                
+                <h1 class="hero-title reveal-text">
+                    I EDIT VIDEOS THAT MAKE PEOPLE <span class="text-highlight">STOP SCROLLING.</span>
+                </h1>
+                
+                <p class="hero-subtitle reveal-fade-up">
+                    Short-form editor specializing in cinematic visuals, engaging storytelling, motion graphics, captions, and sound design.
+                </p>
+                
+                <div class="hero-ctas reveal-fade-up">
+                    <a href="#contact" class="btn btn-primary btn-magnetic">HIRE ME</a>
+                    <a href="#showreel-anchor" class="btn btn-secondary btn-magnetic" id="watchShowreelBtn">WATCH SHOWREEL</a>
+                </div>
+
+                <!-- Featured Showreel -->
+                <div class="hero-showreel-container reveal-scale" id="showreel-anchor">
+                    <div class="showreel-wrapper" id="mainShowreel">
+                        <video 
+                            src="assets/lv_0_20251207085750.mp4"
+                            poster="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1280' height='720' viewBox='0 0 1280 720'><rect width='100%' height='100%' fill='%230a0a0a'/><text x='50%' y='50%' font-family='sans-serif' font-size='24' fill='%23555' text-anchor='middle'>LOADING KISHORE EDITS SHOWREEL...</text></svg>"
+                            muted
+                            loop
+                            playsinline
+                            class="showreel-video"
+                        ></video>
+                        <div class="video-overlay">
+                            <button class="play-trigger-btn" aria-label="Play Showreel" id="showreelPlayBtn">
+                                <span class="play-icon"></span>
+                            </button>
+                            <div class="video-info-overlay">
+                                <h3>SHOWREEL 2026</h3>
+                                <p>Press to play with audio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Work Section -->
+        <section class="work-section" id="work">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag reveal-fade-up">01 / DISCOVER</span>
+                    <h2 class="section-title reveal-fade-up">SELECTED WORK</h2>
+                    <p class="section-desc reveal-fade-up">
+                        A collection of edits built to capture attention, tell a story, and keep viewers watching.
+                    </p>
+                </div>
+
+                <!-- Category Filtering -->
+                <div class="gallery-filters reveal-fade-up">
+                    <button class="filter-btn active" data-filter="all">ALL WORK</button>
+                    <button class="filter-btn" data-filter="automotive">AUTOMOTIVE</button>
+                    <button class="filter-btn" data-filter="social">SOCIAL MEDIA</button>
+                    <button class="filter-btn" data-filter="talking-head">TALKING HEAD</button>
+                    <button class="filter-btn" data-filter="cinematic">CINEMATIC</button>
+                    <button class="filter-btn" data-filter="youtube">YOUTUBE</button>
+                    <button class="filter-btn" data-filter="promo">PROMOTIONAL</button>
+                </div>
+
+                <!-- Grid Gallery -->
+                <div class="project-grid reveal-stagger">
+                    
+                    <!-- Card 1: Automotive -->
+                    <article class="project-card" data-category="automotive" data-video="assets/quality_restoration_20260601210243582.mp4">
+                        <div class="project-card-media">
+                            <video src="assets/quality_restoration_20260601210243582.mp4" muted loop playsinline class="card-video-loop"></video>
+                            <div class="project-card-overlay">
+                                <span class="play-card-icon" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="project-card-meta">
+                            <div class="project-card-header">
+                                <span class="project-number">01</span>
+                                <span class="project-category">Automotive</span>
+                            </div>
+                            <h3 class="project-title">Cinematic Reels Edit 01</h3>
+                            <p class="project-desc">Cinematic automotive edits with dynamic pacing, sound design and color grading.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Social Media -->
+                    <article class="project-card vertical" data-category="social" data-video="assets/lv_7574747024189361409_20251207170041.mp4">
+                        <div class="project-card-media">
+                            <video src="assets/lv_7574747024189361409_20251207170041.mp4" muted loop playsinline class="card-video-loop"></video>
+                            <div class="project-card-overlay">
+                                <span class="play-card-icon" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="project-card-meta">
+                            <div class="project-card-header">
+                                <span class="project-number">02</span>
+                                <span class="project-category">Social Media</span>
+                            </div>
+                            <h3 class="project-title">Cinematic Reels Edit 02</h3>
+                            <p class="project-desc">Short-form content designed for Instagram Reels, YouTube Shorts and TikTok.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Talking Head -->
+                    <article class="project-card" data-category="talking-head" data-video="assets/quality_restoration_20260303003935046 (online-video-cutter.com).mp4">
+                        <div class="project-card-media">
+                            <video src="assets/quality_restoration_20260303003935046 (online-video-cutter.com).mp4" muted loop playsinline class="card-video-loop"></video>
+                            <div class="project-card-overlay">
+                                <span class="play-card-icon" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="project-card-meta">
+                            <div class="project-card-header">
+                                <span class="project-number">03</span>
+                                <span class="project-category">Talking Head</span>
+                            </div>
+                            <h3 class="project-title">Cinematic Reels Edit 03</h3>
+                            <p class="project-desc">Clean, engaging edits with captions, B-roll, motion graphics and retention-focused pacing.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Cinematic -->
+                    <article class="project-card square" data-category="cinematic" data-video="assets/lv_7529590860439211317_20250804215437.mp4">
+                        <div class="project-card-media">
+                            <video src="assets/lv_7529590860439211317_20250804215437.mp4" muted loop playsinline class="card-video-loop"></video>
+                            <div class="project-card-overlay">
+                                <span class="play-card-icon" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="project-card-meta">
+                            <div class="project-card-header">
+                                <span class="project-number">04</span>
+                                <span class="project-category">Cinematic</span>
+                            </div>
+                            <h3 class="project-title">Cinematic Reels Edit 04</h3>
+                            <p class="project-desc">Visual storytelling through rhythm, transitions, sound and color grading.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 5: YouTube -->
+                    <article class="project-card" data-category="youtube" data-video="assets/quality_restoration_20250725152202513 (online-video-cutter.com).mp4">
+                        <div class="project-card-media">
+                            <video src="assets/quality_restoration_20250725152202513 (online-video-cutter.com).mp4" muted loop playsinline class="card-video-loop"></video>
+                            <div class="project-card-overlay">
+                                <span class="play-card-icon" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="project-card-meta">
+                            <div class="project-card-header">
+                                <span class="project-number">05</span>
+                                <span class="project-category">YouTube</span>
+                            </div>
+                            <h3 class="project-title">Cinematic Reels Edit 05</h3>
+                            <p class="project-desc">High-quality long-form pacing, storytelling, B-roll, and immersive sound design.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 6: Promotional -->
+                    <article class="project-card" data-category="promo" data-video="assets/quality_restoration_20251012003917187 (online-video-cutter.com).mp4">
+                        <div class="project-card-media">
+                            <video src="assets/quality_restoration_20251012003917187 (online-video-cutter.com).mp4" muted loop playsinline class="card-video-loop"></video>
+                            <div class="project-card-overlay">
+                                <span class="play-card-icon" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="project-card-meta">
+                            <div class="project-card-header">
+                                <span class="project-number">06</span>
+                                <span class="project-category">Promotional</span>
+                            </div>
+                            <h3 class="project-title">Cinematic Reels Edit 06</h3>
+                            <p class="project-desc">Modern advertising commercial with sharp cuts, slick keyframing, and grading.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag reveal-fade-up">02 / EXPERTISE</span>
+                    <h2 class="section-title reveal-fade-up">WHAT I CAN DO FOR YOU</h2>
+                </div>
+
+                <div class="services-grid reveal-stagger">
+                    
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon-container">
+                            <span class="service-num">01</span>
+                            <span class="service-icon short-form"></span>
+                        </div>
+                        <h3 class="service-title">SHORT-FORM EDITING</h3>
+                        <p class="service-desc">Reels, Shorts and social content designed specifically to seize attention and maximize viewer retention.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon-container">
+                            <span class="service-num">02</span>
+                            <span class="service-icon youtube"></span>
+                        </div>
+                        <h3 class="service-title">YOUTUBE EDITING</h3>
+                        <p class="service-desc">Long-form edits structured around strong narrative pacing, contextual B-roll, and immersive soundscapes.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon-container">
+                            <span class="service-num">03</span>
+                            <span class="service-icon motion"></span>
+                        </div>
+                        <h3 class="service-title">MOTION GRAPHICS</h3>
+                        <p class="service-desc">Clean titles, custom captions, kinetic typography, animations, and visual effects that amplify your story.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon-container">
+                            <span class="service-num">04</span>
+                            <span class="service-icon color-sound"></span>
+                        </div>
+                        <h3 class="service-title">COLOR & SOUND</h3>
+                        <p class="service-desc">Professional color grading and multi-layered sound design to give your footage a cinematic, polished finish.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section" id="process">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag reveal-fade-up">03 / WORKFLOW</span>
+                    <h2 class="section-title reveal-fade-up">HOW I WORK</h2>
+                </div>
+
+                <div class="process-timeline reveal-stagger">
+                    
+                    <!-- Step 1 -->
+                    <div class="process-step">
+                        <div class="step-header">
+                            <span class="step-num">01</span>
+                            <h3 class="step-title">SEND FOOTAGE</h3>
+                        </div>
+                        <p class="step-desc">You share your raw footage, references, style guidelines, and outline your requirements.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step">
+                        <div class="step-header">
+                            <span class="step-num">02</span>
+                            <h3 class="step-title">THE EDIT</h3>
+                        </div>
+                        <p class="step-desc">I build the core narrative structure, pacing, transitions, add motion typography, and sound effects.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-step">
+                        <div class="step-header">
+                            <span class="step-num">03</span>
+                            <h3 class="step-title">THE REVIEW</h3>
+                        </div>
+                        <p class="step-desc">You review the draft in a dedicated portal, provide frame-specific comments and edit requests.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="process-step">
+                        <div class="step-header">
+                            <span class="step-num">04</span>
+                            <h3 class="step-title">FINAL DELIVERY</h3>
+                        </div>
+                        <p class="step-desc">I render the fully polished, color-graded master video, delivered and ready for publish.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container about-container">
+                <div class="about-content reveal-fade-up">
+                    <span class="section-tag">04 / CREATOR</span>
+                    <h2 class="about-title">I'M KISHORE.</h2>
+                    <p class="about-intro">
+                        A video editor who loves turning raw footage into content people want to watch.
+                    </p>
+                    <p class="about-text">
+                        I focus on pacing, storytelling, sound design, motion graphics and visual details that make an edit feel professional.
+                    </p>
+                    <p class="about-text">
+                        Whether it's a short-form reel, cinematic sequence or YouTube video, my goal is simple: make every second count.
+                    </p>
+                </div>
+                
+                <div class="about-media reveal-scale">
+                    <div class="portrait-wrapper">
+                        <img src="assets/portrait.jpg?v=2" alt="Kishore - Video Editor" class="portrait-img" id="portraitImg">
+                        <div class="portrait-border"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Work With Me Section -->
+        <section class="why-me-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag reveal-fade-up">05 / ADVANTAGE</span>
+                    <h2 class="section-title reveal-fade-up">WHY WORK WITH ME</h2>
+                </div>
+
+                <div class="why-me-grid reveal-stagger">
+                    
+                    <div class="why-card">
+                        <h3 class="why-title">FAST COMMUNICATION</h3>
+                        <p class="why-desc">Clear status updates, regular check-ins, and responsive communications throughout the project lifecycle.</p>
+                    </div>
+
+                    <div class="why-card">
+                        <h3 class="why-title">ATTENTION TO DETAIL</h3>
+                        <p class="why-desc">Every cut, color grade choice, text highlight, and sound effect is meticulously aligned to serve the content's message.</p>
+                    </div>
+
+                    <div class="why-card">
+                        <h3 class="why-title">CONTENT-FOCUSED</h3>
+                        <p class="why-desc">Edits tailored to excel on modern platforms, maximizing click-through, scroll stopping, and viewer retention kinetics.</p>
+                    </div>
+
+                    <div class="why-card">
+                        <h3 class="why-title">RELIABLE DELIVERY</h3>
+                        <p class="why-desc">Streamlined client onboarding, structured edit workflows, and solid, predictable delivery timelines that align with your release schedule.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag reveal-fade-up">06 / TRUST</span>
+                    <h2 class="section-title reveal-fade-up">WHAT CLIENTS SAY</h2>
+                </div>
+
+                <div class="testimonials-grid reveal-stagger">
+                    
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Working with Kishore changed how we build short-form. He knows how to trim the fluff and keep people hooked. Retention increased by 35% on our first month of edits."</p>
+                        <div class="testimonial-author">
+                            <strong>Alex Rivera</strong>
+                            <span>Creator, 1M+ Subs (Placeholder Review)</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Kishore delivered cinematic cuts that perfectly hit our brand tone. Fast communication, quick turnaround on feedback, and incredible sound design work."</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah Jenkins</strong>
+                            <span>Marketing Director, Apex Automotive (Placeholder Review)</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"The captions and dynamic zoom edits he does are top notch. He doesn't just cut clips together; he builds a narrative flow that feels premium."</p>
+                        <div class="testimonial-author">
+                            <strong>Marcus Chen</strong>
+                            <span>Tech Educator & Influencer (Placeholder Review)</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="cta-section">
+            <div class="container cta-container reveal-scale">
+                <h2 class="cta-title">YOUR FOOTAGE. MY EDIT.</h2>
+                <p class="cta-desc">Let's create something people actually want to watch.</p>
+                <a href="#contact" class="btn btn-primary btn-lg btn-magnetic">LET'S WORK TOGETHER →</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-container">
+                <div class="contact-info reveal-fade-up">
+                    <span class="section-tag">07 / CONNECT</span>
+                    <h2 class="contact-title">LET'S TALK.</h2>
+                    <p class="contact-desc">
+                        Have a project in mind? Send me the details and let's discuss how I can help you scale your engagement.
+                    </p>
+                    
+                    <div class="social-channels">
+                        <!-- Easy-to-edit placeholder links -->
+                        <a href="https://www.instagram.com/kixhoree_?igsi=NWZ1cHloamJuMGlh" target="_blank" class="social-btn btn-magnetic" rel="noopener">
+                            <span class="btn-text">INSTAGRAM</span>
+                            <span class="arrow-up">↗</span>
+                        </a>
+                        <a href="mailto:kishorekixhxr@gmail.com" class="social-btn btn-magnetic">
+                            <span class="btn-text">EMAIL</span>
+                            <span class="arrow-up">↗</span>
+                        </a>
+                        <a href="https://wa.me/919999999999" target="_blank" class="social-btn btn-magnetic" rel="noopener">
+                            <span class="btn-text">WHATSAPP</span>
+                            <span class="arrow-up">↗</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kishore-e-3164a740b" target="_blank" class="social-btn btn-magnetic" rel="noopener">
+                            <span class="btn-text">LINKEDIN</span>
+                            <span class="arrow-up">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container reveal-fade-up">
+                    <form action="#" class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="clientName">Name</label>
+                            <input type="text" id="clientName" name="name" placeholder="John Doe" required>
+                            <span class="error-msg">Name is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientEmail">Email</label>
+                            <input type="email" id="clientEmail" name="email" placeholder="john@example.com" required>
+                            <span class="error-msg">Valid email is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectType">Project Type</label>
+                            <select id="projectType" name="projectType">
+                                <option value="short-form">Short-Form Content (Reels, TikToks, Shorts)</option>
+                                <option value="youtube">YouTube Long-Form Video</option>
+                                <option value="cinematic">Cinematic/Brand Film</option>
+                                <option value="other">Other / Custom Request</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="clientMessage">Tell me about your project</label>
+                            <textarea id="clientMessage" name="message" rows="5" placeholder="I have 2 hours of footage from a shoot and want to turn it into 5 high-impact Shorts..." required></textarea>
+                            <span class="error-msg">Message is required</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit btn-magnetic" id="submitFormBtn">SEND ENQUIRY</button>
+                    </form>
+                    <div class="form-success-message" id="formSuccessMsg" aria-live="polite">
+                        <div class="success-icon">✓</div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you. Kishore will get back to you within 24 hours.</p>
+                        <button class="btn btn-secondary btn-sm" id="resetFormBtn">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">KISHORE EDITS</a>
+                <p class="footer-tagline">Video Editor • Short-Form Content • Cinematic Edits</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Kishore. All rights reserved.</p>
+                <div class="credits">
+                    Designed for Cinematic Conversion
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Video Lightbox Modal -->
+    <div class="lightbox-modal" id="videoLightbox" role="dialog" aria-modal="true" aria-label="Video Player Lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+        <div class="lightbox-content">
+            <div class="lightbox-video-wrapper">
+                <video id="lightboxVideo" controls autoplay playsinline src=""></video>
+            </div>
+            <div class="lightbox-meta">
+                <span class="lightbox-category" id="lightboxCategory">Category</span>
+                <h2 class="lightbox-title" id="lightboxTitle">Project Title</h2>
+                <p class="lightbox-desc" id="lightboxDesc">Project Description details</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
